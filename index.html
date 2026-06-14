@@ -641,6 +641,9 @@
             <label style="font-size:13px;color:#c39bd3;font-weight:bold;">내 이름</label>
             <input id="inp-pname" type="text" placeholder="이름 입력 (최대 6자)" maxlength="6"
                 style="font-size:15px;padding:7px 11px;border-radius:8px;border:2px solid #9b59b6;background:#1a0a2e;color:#fff;width:100%;box-sizing:border-box;">
+            <label style="font-size:13px;color:#c39bd3;font-weight:bold;">학급 코드 <span style="color:#666;font-size:10px;">(선택)</span></label>
+            <input id="inp-class" type="text" placeholder="예: 2025_1반 (선생님이 알려준 코드)"
+                style="font-size:15px;padding:7px 11px;border-radius:8px;border:2px solid #9b59b6;background:#1a0a2e;color:#fff;width:100%;box-sizing:border-box;">
             <label style="font-size:13px;color:#c39bd3;font-weight:bold;">팀 코드</label>
             <input id="inp-tcode" type="text" placeholder="예: A팀, 1모둠" maxlength="10"
                 style="font-size:15px;padding:7px 11px;border-radius:8px;border:2px solid #9b59b6;background:#1a0a2e;color:#fff;width:100%;box-sizing:border-box;">
@@ -3560,6 +3563,8 @@ function initFirebase(){
 function joinTeam(){
     myName=el('inp-pname').value.trim();
     teamCode=el('inp-tcode').value.trim();
+    const classCodeInput=(document.getElementById('inp-class')?.value||'').trim();
+    const teamsPath=classCodeInput?`classes/${classCodeInput}/teams`:'teams';
     teamSize=parseInt(el('inp-tsize').value)||3;
     const err=el('team-join-err');
     if(!myName){ err.innerText='이름을 입력해주세요.'; return; }
@@ -3575,7 +3580,7 @@ function joinTeam(){
     }
 
     // Firebase 연결
-    teamRef=fbDb.ref(`teams/${teamCode}`);
+    teamRef=fbDb.ref(`${teamsPath}/${teamCode}`);
     meRef=teamRef.child(`members/${myName}`);
 
     // 내 데이터 초기화
@@ -4134,7 +4139,9 @@ function submitSurvey(){
     // Firebase 저장
     try{
         if(typeof firebase!=='undefined'&&firebase.apps&&firebase.apps.length>0){
-            firebase.database().ref('survey/'+Date.now()+'_'+(answers.playerName||'anon')).set(answers)
+            const _svClass=(document.getElementById('inp-class')?.value||'').trim();
+            const _svPath=_svClass?`classes/${_svClass}/survey`:'survey';
+            firebase.database().ref(_svPath+'/'+Date.now()+'_'+(answers.playerName||'anon')).set(answers)
                 .catch(e=>console.warn('설문 저장 실패:',e));
         }
     }catch(e){console.warn('설문 저장 오류:',e);}
