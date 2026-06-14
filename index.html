@@ -709,41 +709,6 @@
 
     <!-- 메모 토글 버튼 -->
 
-    <!-- 개발자용 퀘스트 이동 버튼 (개발 완료 후 삭제) -->
-    <div id="dev-nav" style="position:fixed;top:2px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;gap:3px;z-index:9999;align-items:center;">
-        <div style="display:flex;gap:3px;"><button onclick="devGo(1)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #f1c40f;background:rgba(0,0,0,0.85);color:#f1c40f;">Q1</button>
-            <button onclick="devGo(2)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #4fc3f7;background:rgba(0,0,0,0.85);color:#4fc3f7;">Q2</button>
-            <button onclick="devGo(3)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,0,0,0.85);color:#2ecc71;">Q3</button>
-            <button onclick="devGo(4)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #ff6b6b;background:rgba(0,0,0,0.85);color:#ff6b6b;">Q4</button>
-            <button onclick="devGo(4.5)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #c39bd3;background:rgba(0,0,0,0.85);color:#c39bd3;">Q4.5</button>
-            <button onclick="devGo(5)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #f39c12;background:rgba(0,0,0,0.85);color:#f39c12;">Q5</button>
-            <button onclick="devGo(5.5)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #aaa;background:rgba(0,0,0,0.85);color:#aaa;">Q5.5</button>
-            <button onclick="devGo(6)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(0,0,0,0.85);color:#e74c3c;">Q6</button>
-            <button onclick="devGo(7)" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #ff6b6b;background:rgba(0,0,0,0.85);color:#ff6b6b;">Q7</button>
-            <button onclick="devGo('fb')" style="padding:2px 6px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #aaa;background:rgba(0,0,0,0.85);color:#aaa;">FB</button></div>
-        <div style="display:flex;gap:3px;flex-wrap:wrap;justify-content:center;">
-            <button onclick="devGo('q1no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q1✘</button>
-            <button onclick="devGo('q1ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q1✔</button>
-            <button onclick="devGo('q2no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q2✘</button>
-            <button onclick="devGo('q2ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q2✔</button>
-            <button onclick="devGo('q3no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q3✘</button>
-            <button onclick="devGo('q3ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q3✔</button>
-            <button onclick="devGo('q4no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q4✘</button>
-            <button onclick="devGo('q4ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q4✔</button>
-            <button onclick="devGo('q4.5ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q4.5✔</button>
-            <button onclick="devGo('q4.5no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q4.5✘</button>
-            <button onclick="devGo('q5no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q5✘</button>
-            <button onclick="devGo('q5ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q5✔</button>
-            <button onclick="devGo('q5.5no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q5.5✘</button>
-            <button onclick="devGo('q5.5ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q5.5✔</button>
-            <button onclick="devGo('q6no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q6✘</button>
-            <button onclick="devGo('q6ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q6✔</button>
-            <button onclick="devGo('q7no')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #e74c3c;background:rgba(40,0,0,0.85);color:#e74c3c;">Q7✘</button>
-            <button onclick="devGo('q7ok')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #2ecc71;background:rgba(0,40,0,0.85);color:#2ecc71;">Q7✔</button>
-            <button onclick="devGo('end')" style="padding:2px 5px;font-size:10px;font-weight:bold;cursor:pointer;border-radius:4px;border:1px solid #f1c40f;background:rgba(30,20,0,0.85);color:#f1c40f;">🏆엔딩</button>
-        </div>
-    </div>
-
     <div id="bg-layer"></div>
     <div id="knight" class="char-box"></div>
     <div id="target" class="char-box"></div>
@@ -1021,8 +986,123 @@
         <div class="fb-title">📊 학습 결과 분석</div>
         <div id="fb-gold" style="font-size:22px;font-weight:bold;color:#f1c40f;text-align:center;margin:8px 0;">🪙 최종 골드: 0G</div>
         <div id="fb-content"></div>
-        <button id="fb-restart-btn" onclick="restartFromQ1()">🔄 처음부터 다시!</button>
+        <button id="fb-survey-btn" onclick="openSurvey()" style="display:block;width:100%;max-width:320px;margin:14px auto 6px;padding:13px 0;font-size:16px;font-weight:bold;cursor:pointer;border-radius:10px;background:linear-gradient(135deg,#6c3483,#9b59b6);border:2px solid #c39bd3;color:#fff;">📋 수업 만족도 설문 참여하기</button>
+        <button id="fb-restart-btn" onclick="restartFromQ1()" style="display:block;width:100%;max-width:320px;margin:6px auto 0;">🔄 처음부터 다시!</button>
     </div>
+
+    <!-- ── 설문 모달 ── -->
+    <div id="survey-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.92);z-index:1200;overflow-y:auto;">
+        <div style="max-width:500px;margin:20px auto;padding:22px 20px 30px;background:#12082a;border:2px solid #9b59b6;border-radius:14px;">
+            <div style="font-size:18px;font-weight:bold;color:#f1c40f;margin-bottom:4px;text-align:center;">📋 수업 만족도 설문</div>
+            <div style="font-size:12px;color:#9b59b6;text-align:center;margin-bottom:18px;line-height:1.6;">솔직하게 응답해 주세요. 성적과는 전혀 관계없습니다.</div>
+
+            <!-- 진행 바 -->
+            <div style="height:4px;background:rgba(255,255,255,0.1);border-radius:2px;margin-bottom:18px;">
+                <div id="sv-prog-fill" style="height:4px;background:#9b59b6;border-radius:2px;width:0%;transition:width 0.3s;"></div>
+            </div>
+
+            <!-- Q1 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">1</span>나는 수학 수업이 재미있다.</div>
+                <div class="sv-likert" id="sv1">
+                    <label class="sv-opt"><input type="radio" name="sv1" value="1"><div class="sv-circle">1</div><div class="sv-desc">전혀<br>그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv1" value="2"><div class="sv-circle">2</div><div class="sv-desc">그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv1" value="3"><div class="sv-circle">3</div><div class="sv-desc">보통<br>이다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv1" value="4"><div class="sv-circle">4</div><div class="sv-desc">그렇다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv1" value="5"><div class="sv-circle">5</div><div class="sv-desc">매우<br>그렇다</div></label>
+                </div>
+                <div class="sv-warn" id="sw1">응답을 선택해 주세요.</div>
+            </div>
+            <!-- Q2 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">2</span>오늘 게임 수업은 흥미롭고 재미있었다.</div>
+                <div class="sv-likert" id="sv2">
+                    <label class="sv-opt"><input type="radio" name="sv2" value="1"><div class="sv-circle">1</div><div class="sv-desc">전혀<br>그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv2" value="2"><div class="sv-circle">2</div><div class="sv-desc">그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv2" value="3"><div class="sv-circle">3</div><div class="sv-desc">보통<br>이다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv2" value="4"><div class="sv-circle">4</div><div class="sv-desc">그렇다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv2" value="5"><div class="sv-circle">5</div><div class="sv-desc">매우<br>그렇다</div></label>
+                </div>
+                <div class="sv-warn" id="sw2">응답을 선택해 주세요.</div>
+            </div>
+            <!-- Q3 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">3</span>게임을 하면서 수학에 더 참여하고 싶다는 생각이 들었다.</div>
+                <div class="sv-likert" id="sv3">
+                    <label class="sv-opt"><input type="radio" name="sv3" value="1"><div class="sv-circle">1</div><div class="sv-desc">전혀<br>그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv3" value="2"><div class="sv-circle">2</div><div class="sv-desc">그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv3" value="3"><div class="sv-circle">3</div><div class="sv-desc">보통<br>이다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv3" value="4"><div class="sv-circle">4</div><div class="sv-desc">그렇다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv3" value="5"><div class="sv-circle">5</div><div class="sv-desc">매우<br>그렇다</div></label>
+                </div>
+                <div class="sv-warn" id="sw3">응답을 선택해 주세요.</div>
+            </div>
+            <!-- Q4 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">4</span>게임 속 미션을 해결하면서 이차함수 개념이 더 잘 이해되었다.</div>
+                <div class="sv-likert" id="sv4">
+                    <label class="sv-opt"><input type="radio" name="sv4" value="1"><div class="sv-circle">1</div><div class="sv-desc">전혀<br>그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv4" value="2"><div class="sv-circle">2</div><div class="sv-desc">그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv4" value="3"><div class="sv-circle">3</div><div class="sv-desc">보통<br>이다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv4" value="4"><div class="sv-circle">4</div><div class="sv-desc">그렇다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv4" value="5"><div class="sv-circle">5</div><div class="sv-desc">매우<br>그렇다</div></label>
+                </div>
+                <div class="sv-warn" id="sw4">응답을 선택해 주세요.</div>
+            </div>
+            <!-- Q5 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">5</span>이차함수 그래프 성질(꼭짓점, 축, 평행이동 등)을 이해하고 있다.</div>
+                <div class="sv-likert" id="sv5">
+                    <label class="sv-opt"><input type="radio" name="sv5" value="1"><div class="sv-circle">1</div><div class="sv-desc">전혀<br>그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv5" value="2"><div class="sv-circle">2</div><div class="sv-desc">그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv5" value="3"><div class="sv-circle">3</div><div class="sv-desc">보통<br>이다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv5" value="4"><div class="sv-circle">4</div><div class="sv-desc">그렇다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv5" value="5"><div class="sv-circle">5</div><div class="sv-desc">매우<br>그렇다</div></label>
+                </div>
+                <div class="sv-warn" id="sw5">응답을 선택해 주세요.</div>
+            </div>
+            <!-- Q6 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">6</span>모둠원과 함께 미션을 해결하는 활동이 만족스러웠다.</div>
+                <div class="sv-likert" id="sv6">
+                    <label class="sv-opt"><input type="radio" name="sv6" value="1"><div class="sv-circle">1</div><div class="sv-desc">전혀<br>그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv6" value="2"><div class="sv-circle">2</div><div class="sv-desc">그렇지<br>않다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv6" value="3"><div class="sv-circle">3</div><div class="sv-desc">보통<br>이다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv6" value="4"><div class="sv-circle">4</div><div class="sv-desc">그렇다</div></label>
+                    <label class="sv-opt"><input type="radio" name="sv6" value="5"><div class="sv-circle">5</div><div class="sv-desc">매우<br>그렇다</div></label>
+                </div>
+                <div class="sv-warn" id="sw6">응답을 선택해 주세요.</div>
+            </div>
+            <!-- Q7 자유서술 -->
+            <div class="sv-block">
+                <div class="sv-qlabel"><span class="sv-qnum">7</span>게임 수업에 대한 느낀 점이나 건의사항을 자유롭게 적어 주세요.</div>
+                <textarea id="sv-text" placeholder="예) 가장 재미있었던 퀘스트, 어려웠던 점, 개선됐으면 하는 점 등 무엇이든 괜찮아요." style="width:100%;box-sizing:border-box;min-height:72px;resize:vertical;font-size:13px;font-family:inherit;color:#e0e0e0;background:#0a0614;border:1.5px solid #9b59b6;border-radius:8px;padding:9px 11px;margin-top:2px;"></textarea>
+            </div>
+
+            <div id="sv-result-msg" style="display:none;text-align:center;padding:16px 0 4px;">
+                <div style="font-size:32px;margin-bottom:8px;">✅</div>
+                <div style="font-size:16px;font-weight:bold;color:#2ecc71;margin-bottom:4px;">설문이 완료되었습니다!</div>
+                <div style="font-size:12px;color:#9b59b6;">솔직하게 응답해 주어서 고마워요.</div>
+            </div>
+
+            <button id="sv-submit-btn" onclick="submitSurvey()" style="width:100%;padding:12px;font-size:15px;font-weight:bold;cursor:pointer;border-radius:9px;border:2px solid #9b59b6;background:#2d1a4e;color:#fff;margin-top:12px;">제출하기</button>
+            <button onclick="closeSurvey()" style="width:100%;padding:9px;font-size:13px;cursor:pointer;border-radius:8px;border:1px solid #444;background:transparent;color:#666;margin-top:6px;">나중에 하기</button>
+        </div>
+    </div>
+
+    <style>
+    .sv-block{background:rgba(255,255,255,0.04);border:1px solid rgba(155,89,182,0.25);border-radius:10px;padding:14px;margin-bottom:10px;}
+    .sv-qlabel{font-size:14px;font-weight:bold;color:#e0e0e0;margin-bottom:12px;line-height:1.5;}
+    .sv-qnum{display:inline-block;background:#3C3489;color:#EEEDFE;font-size:11px;font-weight:bold;border-radius:4px;padding:2px 7px;margin-right:7px;}
+    .sv-likert{display:flex;justify-content:space-between;gap:5px;}
+    .sv-opt{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;cursor:pointer;}
+    .sv-opt input[type=radio]{display:none;}
+    .sv-circle{width:34px;height:34px;border-radius:50%;border:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:bold;color:#aaa;transition:background 0.15s;}
+    .sv-opt input:checked~.sv-circle{background:#6c3483;border-color:#9b59b6;color:#fff;}
+    .sv-desc{font-size:10px;color:#666;text-align:center;line-height:1.3;}
+    .sv-warn{font-size:11px;color:#e74c3c;margin-top:6px;display:none;}
+    .sv-warn.show{display:block;}
+    </style>
 
     <div id="top-ui">
         <div class="status-box">
@@ -3499,7 +3579,7 @@ function joinTeam(){
     meRef=teamRef.child(`members/${myName}`);
 
     // 내 데이터 초기화
-    meRef.set({name:myName, gold:0, quest:0, online:true, hintReq:false});
+    meRef.set({name:myName, gold:0, quest:0, online:true, hintReq:false, startTime:Date.now()});
 
     // 팀원 현황 실시간 감지
     teamRef.child('members').on('value', snap=>{
@@ -3566,19 +3646,31 @@ function syncMyData(){
         gd.q1.w||0, gd.q2.w||0, gd.q3.w||0, gd.q4.w||0,
         gd.q45.w||0, gd.q5.w||0, 0, gd.q6.w||0, gd.q7.w||0
     ];
+    // 정답 수 집계 (퀘스트별)
+    const correctArr=[
+        gd.q1.c||0, gd.q2.c||0, gd.q3.c||0, gd.q4.c||0,
+        gd.q45.c||0, gd.q5.c||0, 0, gd.q6.c||0, gd.q7.c||0
+    ];
     const totalCorrect=(gd.q1.c||0)+(gd.q2.c||0)+(gd.q3.c||0)+(gd.q4.c||0)+
         (gd.q45.c||0)+(gd.q5.c||0)+(gd.q6.c||0)+(gd.q7.c||0);
-    meRef.update({
+    const updateData={
         name: myName,
         gold: gold,
         quest: currentQuest,
         passed: passedQuests.join(','),
         correct: totalCorrect,
+        correctArr: correctArr,
         wrong: wrongArr,
         hp: pHP,
         online: true,
         ts: Date.now()
-    });
+    };
+    // 모든 퀘스트(Q7)를 통과한 시점에 완료 시각 기록 (한 번만)
+    if(passedQuests.includes('7') && !window._finishSynced){
+        updateData.finishTime = Date.now();
+        window._finishSynced = true;
+    }
+    meRef.update(updateData);
 }
 
 // addGold 호출 후 자동 동기화
@@ -3686,76 +3778,6 @@ function showTeamMsg(msg, color){
 /* ================================================================
    개발자 점프 버튼 (개발 완료 후 삭제)
 ================================================================ */
-function devReset(){
-    pHP=100; isPerfect=true; correctCount=0; hasWeapon=false; hasSeenFeedback=false; gold=0;
-    q1IntroShown=false;
-    Object.keys(gd).forEach(k=>{if(gd[k]&&typeof gd[k]==='object'){gd[k].c=0;gd[k].w=0;}});
-    ['q3-overlay','q4-overlay','q45-overlay','q5-overlay','q55-overlay','q6-overlay','q7-overlay',
-     'feedback-screen','opening-screen'].forEach(id=>{
-        const e=document.getElementById(id);if(e)e.style.display='none';
-    });
-    el('full-overlay').style.display='none';
-    el('overlay-msg').style.display='none';
-    el('knight').style.display='block';
-    el('target').style.display='block';
-    cleanDots();
-    ctx('grid-layer').clearRect(0,0,1000,750);
-    ctx('graph-layer').clearRect(0,0,1000,750);
-    const q6l=document.getElementById('q6-dots-layer');if(q6l)q6l.innerHTML='';
-    const ov=document.getElementById('ov-feedback-btn');if(ov)ov.remove();
-    updateUI();
-}
-function devGo(q){
-    devReset();
-    if(q===1)          {showTopUI(true);shuffleQ1();setupQ1();}
-    else if(q===2)     {currentLevel=2;startQ2();}
-    else if(q===3)     {currentLevel=3;startQ3Ov();}
-    else if(q===4)     {currentLevel=4;showTopUI(false);startQ4();}
-    else if(q===4.5)   {currentLevel=4;showTopUI(false);startQ45();}
-    else if(q===5)     {currentLevel=5;hasWeapon=true;showTopUI(false);startQ5();}
-    else if(q===5.5)   {currentLevel=5;hasWeapon=true;showTopUI(false);startQ55();}
-    else if(q===6)     {currentLevel=6;hasWeapon=true;showTopUI(false);startQ6();}
-    else if(q===7)     {currentLevel=7;hasWeapon=true;showTopUI(false);startQ7();}
-    else if(q==='fb')  {showFeedback();}
-    // ── 결과 화면 바로가기 ──
-    else if(q==='q1no')  {currentLevel=1;showTopUI(true);failQ1HP();}
-    else if(q==='q1no')  {currentLevel=1;showTopUI(true);failQ1HP();}
-    else if(q==='q1ok')  {currentLevel=1;showTopUI(true);finishQ1();}
-    else if(q==='q2no')  {currentLevel=2;showTopUI(false);
-                          cleanDots();ctx('graph-layer').clearRect(0,0,1000,750);
-                          showOv('assets/b2.png','비밀번호를 풀지 못해\n마법의 숲으로 들어갈 수 없습니다...\n여기까지의 결과를 확인해보세요.',()=>showFeedback());}
-    else if(q==='q3no')  {currentLevel=3;showTopUI(false);
-                          el('q3-overlay').style.display='none';
-                          showOv('assets/m_secret1.png','비밀번호를 풀지 못해\n마법의 숲으로 들어갈 수 없습니다...\n여기까지의 결과를 확인해보세요.',()=>showFeedback());}
-    else if(q==='q2no')  {currentLevel=2;showTopUI(false);cleanDots();ctx('graph-layer').clearRect(0,0,1000,750);showOv('assets/b2.png','몬스터의 성으로 가는 길을 찾지 못해\\n모험을 이어가지 못합니다...\\n여기까지의 결과를 확인해보세요.',()=>showFeedback());}
-    else if(q==='q2ok')  {currentLevel=2;showTopUI(false);finishQ2();}
-    else if(q==='q3ok')  {currentLevel=3;showTopUI(false);finishQ3Ov();}
-    else if(q==='q4no')  {currentLevel=4;showTopUI(false);el('q4-overlay').style.display='block';failQ4();}
-    else if(q==='q4no')  {currentLevel=4;showTopUI(false);el('q4-overlay').style.display='block';failQ4();}
-    else if(q==='q4ok')  {currentLevel=4;showTopUI(false);el('q4-overlay').style.display='block';finishQ4();}
-    else if(q==='q4.5ok'){currentLevel=4;showTopUI(false);el('q45-overlay').style.display='block';hasWeapon=true;finishQ45();}
-    else if(q==='q4.5no'){currentLevel=4;showTopUI(false);el('q45-overlay').style.display='block';failQ45();}
-    else if(q==='q5ok')  {currentLevel=5;hasWeapon=true;showTopUI(false);el('q5-overlay').style.display='block';finishQ5();}
-    else if(q==='q5no')  {currentLevel=5;hasWeapon=true;showTopUI(false);el('q5-overlay').style.display='block';failQ5();}
-    else if(q==='q5.5no'){currentLevel=5;hasWeapon=true;showTopUI(false);
-                          el('q55-overlay').style.display='none';
-                          showOv('assets/mk_fail3.png','체력이 부족하여 문을 열지 못했습니다...',()=>showFeedback());}
-    else if(q==='q5.5ok'){currentLevel=5;hasWeapon=true;showTopUI(false);el('q55-overlay').style.display='block';
-                          submitQ55._devSkip=true;pHP=100;
-                          showOv('assets/lockeddoor.png','🔓 딸깍! 문이 열렸습니다! 안으로 들어간다...',()=>startQ6());}
-    else if(q==='q6ok')  {currentLevel=6;hasWeapon=true;showTopUI(false);el('q6-overlay').style.display='block';finishQ6();}
-    else if(q==='q6no')  {currentLevel=6;hasWeapon=true;showTopUI(false);el('q6-overlay').style.display='block';failQ6();}
-    else if(q==='q7ok')  {currentLevel=7;hasWeapon=true;showTopUI(false);el('q7-overlay').style.display='block';
-                          q7LastTwo=[true,true];finishQ7();}
-    else if(q==='q7no')  {currentLevel=7;hasWeapon=true;showTopUI(false);el('q7-overlay').style.display='block';failQ7();}
-    else if(q==='end')   {currentLevel=7;hasWeapon=true;
-                          q7LastTwo=[true,true];
-                          showOv('assets/mk_victory1.png','미노타우루스를 쓰러뜨렸다!\n어둠의 힘이 사라졌다!',()=>{
-                            showOv('assets/success4.png','⚔️ 미노타우루스 몬스터를 물리쳤다!\n용사여, 그대는 진정한 이차함수의 마스터!\n모든 퀘스트를 완료하였습니다! 🏆',()=>{
-                              showOv('assets/ending1.png','용사의 활약으로 마을에 평화가 찾아왔습니다.\n사람들은 서로를 아끼며 화목하게 살아가고,\n왕국 곳곳에 웃음꽃이 피어났습니다. 🌸\n\n수고했어요! 이차함수 완전 정복! 🎉',()=>showFeedback(),false,'🎉 피드백 보기');
-                            });
-                          });}
-}
 
 /* ================================================================
    재시작 (오프닝 없이 Q1으로)
@@ -4054,6 +4076,74 @@ function showFeedback(){
    공통 유틸리티
 ================================================================ */
 function el(id){return document.getElementById(id);}
+
+/* ================================================================
+   설문 기능
+================================================================ */
+function openSurvey(){
+    document.getElementById('survey-modal').style.display='block';
+    updateSvProgress();
+}
+function closeSurvey(){
+    document.getElementById('survey-modal').style.display='none';
+}
+function updateSvProgress(){
+    let answered=0;
+    for(let i=1;i<=6;i++){if(document.querySelector('input[name="sv'+i+'"]:checked'))answered++;}
+    document.getElementById('sv-prog-fill').style.width=Math.round(answered/6*100)+'%';
+}
+// 라디오 변경 이벤트: 경고 숨김 + 진행바 갱신
+(function attachSvListeners(){
+    function tryAttach(){
+        const radios=document.querySelectorAll('#survey-modal input[type=radio]');
+        if(!radios.length){setTimeout(tryAttach,200);return;}
+        radios.forEach(function(el){
+            el.addEventListener('change',function(){
+                const num=el.name.replace('sv','');
+                const w=document.getElementById('sw'+num);
+                if(w)w.classList.remove('show');
+                updateSvProgress();
+            });
+        });
+    }
+    if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',tryAttach);}
+    else{tryAttach();}
+})();
+function submitSurvey(){
+    let valid=true;
+    for(let i=1;i<=6;i++){
+        const checked=document.querySelector('input[name="sv'+i+'"]:checked');
+        const w=document.getElementById('sw'+i);
+        if(!checked){w.classList.add('show');valid=false;}
+    }
+    if(!valid)return;
+    const answers={
+        q1:+document.querySelector('input[name="sv1"]:checked').value,
+        q2:+document.querySelector('input[name="sv2"]:checked').value,
+        q3:+document.querySelector('input[name="sv3"]:checked').value,
+        q4:+document.querySelector('input[name="sv4"]:checked').value,
+        q5:+document.querySelector('input[name="sv5"]:checked').value,
+        q6:+document.querySelector('input[name="sv6"]:checked').value,
+        comment:(document.getElementById('sv-text').value||'').trim(),
+        playerName:typeof myName!=='undefined'?myName:'익명',
+        teamCode:typeof teamCode!=='undefined'?teamCode:'',
+        gold:typeof gold!=='undefined'?gold:0,
+        finalQuest:typeof currentQuest!=='undefined'?currentQuest:1,
+        submittedAt:new Date().toISOString()
+    };
+    // Firebase 저장
+    try{
+        if(typeof firebase!=='undefined'&&firebase.apps&&firebase.apps.length>0){
+            firebase.database().ref('survey/'+Date.now()+'_'+(answers.playerName||'anon')).set(answers)
+                .catch(e=>console.warn('설문 저장 실패:',e));
+        }
+    }catch(e){console.warn('설문 저장 오류:',e);}
+    // UI 완료 표시
+    document.querySelectorAll('.sv-block').forEach(b=>b.style.display='none');
+    document.getElementById('sv-result-msg').style.display='block';
+    document.getElementById('sv-submit-btn').style.display='none';
+    document.getElementById('sv-prog-fill').style.width='100%';
+}
 function ctx(id){return el(id).getContext('2d');}
 
 function showTopUI(show){
@@ -4281,73 +4371,6 @@ function drawCombinedParabolas(canvas,graphs,colors){
 /* ================================================================
    개발자 점프 버튼 (개발 완료 후 삭제)
 ================================================================ */
-function devReset(){
-    pHP=100; isPerfect=true; correctCount=0; hasWeapon=false; hasSeenFeedback=false; gold=0;
-    q1IntroShown=false;
-    Object.keys(gd).forEach(k=>{if(gd[k]&&typeof gd[k]==='object'){gd[k].c=0;gd[k].w=0;}});
-    ['q3-overlay','q4-overlay','q45-overlay','q5-overlay','q55-overlay','q6-overlay','q7-overlay',
-     'feedback-screen','opening-screen'].forEach(id=>{
-        const e=document.getElementById(id);if(e)e.style.display='none';
-    });
-    el('full-overlay').style.display='none';
-    el('overlay-msg').style.display='none';
-    el('knight').style.display='block';
-    el('target').style.display='block';
-    cleanDots();
-    ctx('grid-layer').clearRect(0,0,1000,750);
-    ctx('graph-layer').clearRect(0,0,1000,750);
-    const q6l=document.getElementById('q6-dots-layer');if(q6l)q6l.innerHTML='';
-    const ov=document.getElementById('ov-feedback-btn');if(ov)ov.remove();
-    updateUI();
-}
-function devGo(q){
-    devReset();
-    if(q===1)          {showTopUI(true);shuffleQ1();setupQ1();}
-    else if(q===2)     {currentLevel=2;startQ2();}
-    else if(q===3)     {currentLevel=3;startQ3Ov();}
-    else if(q===4)     {currentLevel=4;showTopUI(false);startQ4();}
-    else if(q===4.5)   {currentLevel=4;showTopUI(false);startQ45();}
-    else if(q===5)     {currentLevel=5;hasWeapon=true;showTopUI(false);startQ5();}
-    else if(q===5.5)   {currentLevel=5;hasWeapon=true;showTopUI(false);startQ55();}
-    else if(q===6)     {currentLevel=6;hasWeapon=true;showTopUI(false);startQ6();}
-    else if(q===7)     {currentLevel=7;hasWeapon=true;showTopUI(false);startQ7();}
-    else if(q==='fb')  {showFeedback();}
-    // ── 결과 화면 바로가기 ──
-    else if(q==='q1no')  {currentLevel=1;showTopUI(true);failQ1HP();}
-    else if(q==='q1ok')  {currentLevel=1;showTopUI(true);finishQ1();}
-    else if(q==='q2no')  {currentLevel=2;showTopUI(false);
-                          cleanDots();ctx('graph-layer').clearRect(0,0,1000,750);
-                          showOv('assets/b2.png','몬스터의 성으로 가는 길을 찾지 못해\n모험을 이어가지 못합니다...\n여기까지의 결과를 확인해보세요.',()=>showFeedback());}
-    else if(q==='q3no')  {currentLevel=3;showTopUI(false);
-                          el('q3-overlay').style.display='none';
-                          showOv('assets/m_secret1.png','비밀번호를 풀지 못해\n마법의 숲으로 들어갈 수 없습니다...\n여기까지의 결과를 확인해보세요.',()=>showFeedback());}
-    else if(q==='q2ok')  {currentLevel=2;showTopUI(false);finishQ2();}
-    else if(q==='q3ok')  {currentLevel=3;showTopUI(false);finishQ3Ov();}
-    else if(q==='q4no')  {currentLevel=4;showTopUI(false);el('q4-overlay').style.display='block';failQ4();}
-    else if(q==='q4ok')  {currentLevel=4;showTopUI(false);el('q4-overlay').style.display='block';finishQ4();}
-    else if(q==='q4.5ok'){currentLevel=4;showTopUI(false);el('q45-overlay').style.display='block';hasWeapon=true;finishQ45();}
-    else if(q==='q4.5no'){currentLevel=4;showTopUI(false);el('q45-overlay').style.display='block';failQ45();}
-    else if(q==='q5ok')  {currentLevel=5;hasWeapon=true;showTopUI(false);el('q5-overlay').style.display='block';finishQ5();}
-    else if(q==='q5no')  {currentLevel=5;hasWeapon=true;showTopUI(false);el('q5-overlay').style.display='block';failQ5();}
-    else if(q==='q5.5no'){currentLevel=5;hasWeapon=true;showTopUI(false);
-                          el('q55-overlay').style.display='none';
-                          showOv('assets/mk_fail3.png','체력이 부족하여 문을 열지 못했습니다...',()=>showFeedback());}
-    else if(q==='q5.5ok'){currentLevel=5;hasWeapon=true;showTopUI(false);el('q55-overlay').style.display='block';
-                          submitQ55._devSkip=true;pHP=100;
-                          showOv('assets/lockeddoor.png','🔓 딸깍! 문이 열렸습니다! 안으로 들어간다...',()=>startQ6());}
-    else if(q==='q6ok')  {currentLevel=6;hasWeapon=true;showTopUI(false);el('q6-overlay').style.display='block';finishQ6();}
-    else if(q==='q6no')  {currentLevel=6;hasWeapon=true;showTopUI(false);el('q6-overlay').style.display='block';failQ6();}
-    else if(q==='q7ok')  {currentLevel=7;hasWeapon=true;showTopUI(false);el('q7-overlay').style.display='block';
-                          q7LastTwo=[true,true];finishQ7();}
-    else if(q==='q7no')  {currentLevel=7;hasWeapon=true;showTopUI(false);el('q7-overlay').style.display='block';failQ7();}
-    else if(q==='end')   {currentLevel=7;hasWeapon=true;
-                          q7LastTwo=[true,true];
-                          showOv('assets/mk_victory1.png','미노타우루스를 쓰러뜨렸다!\n어둠의 힘이 사라졌다!',()=>{
-                            showOv('assets/success4.png','⚔️ 미노타우루스 몬스터를 물리쳤다!\n용사여, 그대는 진정한 이차함수의 마스터!\n모든 퀘스트를 완료하였습니다! 🏆',()=>{
-                              showOv('assets/ending1.png','용사의 활약으로 마을에 평화가 찾아왔습니다.\n사람들은 서로를 아끼며 화목하게 살아가고,\n왕국 곳곳에 웃음꽃이 피어났습니다. 🌸\n\n수고했어요! 이차함수 완전 정복! 🎉',()=>showFeedback(),false,'🎉 피드백 보기');
-                            });
-                          });}
-}
 
 /* ================================================================
    재시작 (오프닝 없이 Q1으로)
